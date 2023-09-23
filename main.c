@@ -7,6 +7,7 @@
  * @argv: file location monty
  * Return: 0 on success
  */
+bus_t bus = {NULL, NULL, NULL, 0};
 
 int main(int argc, char *argv[])
 {
@@ -16,7 +17,6 @@ int main(int argc, char *argv[])
 	unsigned int counter = 0;
 	size_t length;
 
-	bus_t bus = {NULL, NULL, NULL, 0};
 
 	if (argc != 2)
 	{
